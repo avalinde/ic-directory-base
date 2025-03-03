@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles.css">
+    <script
+      src="https://kit.fontawesome.com/3f0df5f067.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Create a Listing</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+            <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <ul id="nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <h1>Create a New Listing</h1>
+            <form class="form-f">
+                <p class="form-p">
+                  <label class="form-l" for="title">Title: </label>
+                  <input
+                    class="form-i"
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Title"
+                    required
+                  />
+                </p>
+                <p class="form-p">
+                  <label class="form-l" for="author">Author:</label>
+                  <input
+                    class="form-i"
+                    type="text"
+                    name="author"
+                    id="author"
+                    placeholder="Author"
+                    required
+                  />
+                </p>
+                <p class="form-p">
+                  <label class="form-l" for="publisher">Publisher:</label>
+                  <select class="form-i" name="publisher" id="publisher">
+                    <option value="pleasechoose" selected disabled>--Select--</option>
+                    <option value="boombox">BOOM! Box</option>
+                    <option value="Harry N. Abrams">Harry N. Abrams</option>
+                    <option value="Icon Books">Icon Books</option>
+                    <option value="Image Comics">Image Comics</option>
+                    <option value="Marvel">Marvel</option>
+                    <option value="Simon & Schuster">Simon & Schuster</option>
+                    <option value="Top Shelf Productions">
+                      Top Shelf Productions
+                    </option>
+                    <option value="VIZ Media LLC">VIZ Media LLC</option>
+                  </select>
+                </p>
+                <p class="form-p">
+                  <label class="form-l" for="genre">Genre:</label>
+                  <input
+                    class="form-i"
+                    type="text"
+                    name="genre"
+                    id="genre"
+                    placeholder="Genre"
+                  />
+                </p>
+      
+                <p class="form-p">
+                  <label class="form-l" for="pages">Number of pages: </label>
+                  <input
+                    class="form-i"
+                    type="number"
+                    name="pages"
+                    id="page"
+                    placeholder="Number of Pages"
+                  />
+                </p>
+      
+                <p class="form-p">
+                  <label class="form-l" for="rating">Rating:</label>
+                  <input
+                    class="form-i"
+                    type="text"
+                    name="rating"
+                    id="rating"
+                    required
+                  />
+                </p>
+                <p class="form-p">
+                  <label class="form-l" for="synopsis">Synopsis:</label>
+                  <textarea class="form-i" name="synopsis" id="synopsis">
+      Synopsis </textarea
+                  >
+                </p>
+                <p class="text-center"><button>SUBMIT</button></p>
+              </form>
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 Boston Informed Consent Directory &#9895 </p>
+    </footer>
+</body>
+</html>
