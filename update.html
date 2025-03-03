@@ -28,94 +28,78 @@
         </nav>
     </header>
 
-    <div class="main-container">
-        <main>
-          <h1>Update a Listing</h1>
-          <form class="form-f">
-            <p class="form-p">
-              <label class="form-l" for="title">Title: </label>
-              <input
-                class="form-i"
-                type="text"
-                name="title"
-                id="title"
-                value="title value stored in database"
-                required
-              />
-            </p>
-            <p class="form-p">
-              <label class="form-l" for="author">Author: </label>
-              <input
-                class="form-i"
-                type="text"
-                name="author"
-                id="author"
-                value="author value stored in database"
-                required
-              />
-            </p>
-            <p class="form-p">
-              <label class="form-l" for="publisher">Publisher:</label>
-              <select class="form-i" name="publisher" id="publisher">
-                <option value="boombox">BOOM! Box</option>
-                <option value="Harry N. Abrams">Harry N. Abrams</option>
-                <option value="Icon Books">Icon Books</option>
-                <option value="Image Comics">Image Comics</option>
-                <option value="Marvel">Marvel</option>
-                <option value="Simon & Schuster">Simon & Schuster</option>
-                <option value="Top Shelf Productions">
-                  Top Shelf Productions
-                </option>
-                <option value="VIZ Media LLC">VIZ Media LLC</option>
-                <option value="default" selected>
-                  publisher value stored in database
-                </option>
-              </select>
-            </p>
-            <p class="form-p">
-              <label class="form-l" for="genre">Genre: </label>
-              <input
-                class="form-i"
-                type="text"
-                name="genre"
-                id="genre"
-                value="genre value stored in database"
-                required
-              />
-            </p>
-  
-            <p class="form-p">
-              <label class="form-l" for="pages">Number of pages: </label>
-              <input
-                class="form-i"
-                type="number"
-                name="pages"
-                id="page"
-                value="255"
-              />
-            </p>
-  
-            <p class="form-p">
-              <label class="form-l" for="rating">Rating</label>
-              <input
-                class="form-i"
-                type="text"
-                name="rating"
-                id="rating"
-                value="5"
-                required
-              />
-            </p>
-            <p class="form-p">
-              <label class="form-l" for="synopsis">Synopsis: </label>
-              <textarea class="form-i" name="synopsis" id="synopsis">
-  synopsis value stored in database</textarea
-              >
-            </p>
-            <p class="text-center"><button>SUBMIT</button></p>
-          </form>
-        </main>
-      </div>
+    <main>
+        <div class="main-container">
+            <h1>Update a Listing</h1>
+            <form class="form-f">
+                <p class="form-p">
+                  <label class="form-l" for="hospitalName">Clinic Name: </label>
+                  <select class="form-i" name="insurance" id="insurance">
+                    <option value="pleasechoose" selected disabled>--Select--</option>
+                    <option value="MGH">Massachussets General Hospital</option>
+                    <option value="BWH">Brigham and Women's Hospital</option>
+                    <option value="Fenway">Fenway Health</option>
+                    <option value="BMC">Boston Medical Center</option>
+                  </select>
+                </p>
+                <p class="form-p">
+                  <label class="form-l" for="address">Address:</label>
+                  <input
+                    class="form-i"
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Address"
+                    required
+                  />
+                </p>
+
+                <p class="form-p">
+                    <label class="form-l" for="addressLine2">Address Line 2 (Optional):</label>
+                    <input
+                      class="form-i"
+                      type="text"
+                      name="addressLine2"
+                      id="addressLine2"
+                      placeholder="Address Line 2"
+                    />
+                </p>
+
+               
+                <p class="form-p">
+                  <label class="form-l">Services Offered:</label>
+                </p>
+                <input type="checkbox" id="service1" name="service1" value="service1">
+                <label for="service1"> Service 1</label><br>
+                <input type="checkbox" id="service2" name="service2" value="Car">
+                <label for="service2">Service 2</label><br>
+                <input type="checkbox" id="service3" name="service3" value="service3">
+                <label for="service3"> Service 3</label>
+      
+                <p class="form-p">
+                    <label class="form-l" for="insurance">Insurance Information:</label>
+                    <select class="form-i" name="insurance" id="insurance">
+                      <option value="pleasechoose" selected disabled>--Select--</option>
+                      <option value="MassHealth">MassHealth</option>
+                      <option value="Blue Cross Blue Shield">Blue Cross Blue Shield</option>
+                      <option value="Tufts">Tufts</option>
+                      <option value="Harvard Pilgrim">Harvard Pilgrim</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </p>
+      
+                
+                <p class="form-p">
+                  <label class="form-l" for="otherInfo">Other Information:</label>
+                  <textarea class="form-i" name="otherInfo" id="otherInfo">
+      Other Information </textarea
+                  >
+                </p>
+                <p class="text-center"><button>SUBMIT</button></p>
+              </form>
+        </div>
+    </main>
+
     <footer>
         <p>&copy; 2025 Boston Informed Consent Directory &#9895 </p>
     </footer>
